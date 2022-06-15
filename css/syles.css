@@ -3,6 +3,7 @@ body{
     z-index:0;
     color: black;
 }
+html { height: 100% }
 
 .whatsapp{
     position: fixed;
@@ -31,4 +32,23 @@ body{
 
 footer{
     background-color: rgb(255, 196, 0);
+    margin-bottom: 0px;
+}
+.breadhover{
+    color: rgb(255, 153, 0) ;
+}
+.breadhover:hover{
+    color: black !important;
+}
+.bg-grey{
+    background-color: rgb(236, 236, 236);
+}
+
+.alink{
+    text-decoration: none;
+    
+
+}
+.alink:hover{
+    color: rgb(255, 255, 255) !important
 }
