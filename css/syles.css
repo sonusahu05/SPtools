@@ -67,9 +67,9 @@ footer {
     /* background-color: rgb(255, 255, 255) !important; */
 }
 
-
-
-
+.modal_images_link :hover{
+    border: 4px solid rgb(255, 153, 0);
+}
 
 
 
