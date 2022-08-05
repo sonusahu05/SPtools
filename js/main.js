@@ -37,3 +37,4 @@ function changeID (any){
     const change=document.getElementById(any);
     document.getElementById("visible").innerHTML=change.innerHTML;
 }
+

@@ -4,9 +4,16 @@
   "description": "This is the 1st version of SPtools website",
   "main": "home.html",
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "clean": "rimraf dist",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* --out-dir='dist/img'",
+    "usemin": "usemin home.html -d dist -o dist/home.html --htmlmin true",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -19,7 +26,14 @@
   },
   "homepage": "https://github.com/sonusahu05/SPtools#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "lite-server": "^2.6.1",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
