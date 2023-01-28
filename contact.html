@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SPtools</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/images/Favicon/site.webmanifest">
+
+    <!-- build:css css/main.css -->
+    <!-- <link rel="stylesheet" href="node_modules/mdb-ui-kit/css/mdb.min.css">
+   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+   <link rel="stylesheet" href="css/syles.css">
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/syles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row">
+
+            <span class="col-12  col-sm-6">
+                <i class="fa fa-phone fa-lg"></i>
+                +91 9811808170/ +91 9810684500
+            </span>
+            <span class="col-12 col-sm-6 ">
+                <a class="text-decoration-none text-reset float-sm-end" href="mailto:sptools23@gmail.com"><img class=""
+                        src="" />
+                    <i class="fa fa-envelope fa-lg"></i>
+                    sptools23@gmail.com</a>
+            </span>
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-sm ">
+        <div class="container ">
+            <a class="navbar-brand " href="#">
+                <img src="src/images/logo.png" alt="SPTools" width="" height="35">
+                SPTools</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ms-auto  ">
+                    <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About Us</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Our Products</a></li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Products
+                        </a>
+                        <ul class="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdownMenuLink">
+
+                            <li><a class="dropdown-item text-warning" onclick="changeID('Posalux')"
+                                    href="products.html#navi">Posalux Tools</a></li>
+                            <li><a class="dropdown-item text-warning" onclick="changeID('Cnc')"
+                                    href="products.html#navi">C.N.C Tools</a></li>
+                            <li><a class="dropdown-item text-warning" onclick="changeID('End')"
+                                    href="products.html#navi">Endmill Tools</a></li>
+                            <li><a class="dropdown-item text-warning" onclick="changeID('Disc')"
+                                    href="products.html#navi">Disc Tools</a></li>
+                            <li><a class="dropdown-item text-warning" onclick="changeID('Dull')"
+                                    href="products.html#navi">Dull Pin</a></li>
+                            <li><a class="dropdown-item text-warning" onclick="changeID('Inside')"
+                                    href="products.html#navi">In-Side Turning Tools</a></li>
+                            <li><a class="dropdown-item text-warning" onclick="changeID('Hammer')"
+                                    href="products.html#navi">Hammer Tools</a></li>
+                            <li><a class="dropdown-item text-warning" onclick="changeID('Pcd')"
+                                    href="products.html#navi">P.C.D. Tools</a></li>
+                            <li><a class="dropdown-item text-warning" onclick="changeID('Magic')"
+                                    href="products.html#navi">Magic Wheel</a></li>
+                            <li><a class="dropdown-item text-warning" href="products.html">View All</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdownMenuLink2">
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html">Posalux Tools</a>
+                            </li>
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html#cnc">C.N.C Tools</a>
+                            </li>
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html#end">Endmill
+                                    Tools</a></li>
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html#disc">Disc Tools</a>
+                            </li>
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html#dull">Dull Pin</a>
+                            </li>
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html#inside">In-Side
+                                    Turning Tools</a></li>
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html#hammer">Hammer
+                                    Tools</a></li>
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html#pcd">P.C.D.
+                                    Tools</a></li>
+                            <li class=""><a class="dropdown-item text-warning" href="./gallery.html#magic">Magic
+                                    Wheel</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link active" href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="bg-grey">
+        <div class="container py-2">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a class="text-decoration-none breadhover" href="home.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <div class="mx-3 mx-md-0 mt-3 mt-md-0">
+
+        <div class="h-100" style="background-color:rgba(0, 60, 128, 0.171)">
+            <div class="container py-sm-5">
+                <div class="row">
+
+                    <div class="col-12 offset-xl-1 col-sm-4 p-3 align-self-center" style="    background-color: #002038;
+                    ">
+
+                        <h1 style="color: rgb(255, 217, 0);">CALL US</h1>
+                        <H2 style="color: white;">
+                            <a class="text-decoration-none text-reset" href="tel:+91 9811808170">+91 9811808170</a> <br>
+                            <a class="text-decoration-none text-reset" href="tel:+91 9810684500">+91 9810684500</a>
+                        </H2>
+
+                    </div>
+                    <div class="col-12  offset-xl-1 col-sm-8 col-xl-6 align-self-center d-none d-sm-block">
+                        <img src="src/images/stockcall.jpg" width="100%" height="450" style="border:0;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </img>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="mx-3 mx-md-0 mt-3 mt-md-0">
+
+        <div class="h-100" style="background-color:rgba(128, 0, 0, 0.178)">
+            <div class="container py-sm-5">
+                <div class="row">
+
+                    <div class="col-12 col-sm-7 align-self-center d-none d-sm-block">
+                        <iframe src="src/images/stockmail.jpg" width="100%" height="450" style="border:0;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                    <div class="col-12 col-sm-5 py-5 align-self-center text-align-center"
+                        style="background-color:rgb(153, 44, 44);">
+                        <h1 class="text-align-center" style="color: rgb(255, 217, 0);">MAIL US</h1>
+                        <h4 class="text-decoration-none" style="color: white;">
+                            <a class="text-decoration-none text-reset" href="mailto:sptools23@gmail.com">
+                                sptools23@gmail.com</a>
+                        </h4>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="mx-3 mx-md-0 mt-3 mt-md-0">
+
+        <div class="h-100" style="background-color:rgba(0, 128, 0, 0.164)">
+            <div class="container py-sm-5">
+                <div class="row">
+
+                    <div class="col-12 col-sm-4 p-3 align-self-center" style="background-color: #024100">
+
+                        <h1 style="color: rgb(255, 217, 0);font-size: 40px;">VISIT US</h1>
+                        <H4 style="color: white;">
+
+                            Address:
+                            <BR>Delhi Branch:- B-43, Gali No. 4, South Ganesh Nagar, Patparganj
+                            Road, Delhi- 110092 (India)
+
+                        </H4>
+
+                    </div>
+                    <div class="col-12 col-sm-8 align-self-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7004.460927429799!2d77.29356234655761!3d28.62285412877846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b3d4f6c5e851ab2!2sSP%20Tools!5e0!3m2!1sen!2sin!4v1674929295359!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-group" role="group">
+                <a role="button" class="btn btn-primary" href="tel:+91 9811808170"><i class="fa fa-phone"></i></a>
+                <a role="button" class="btn btn-success" href="https://api.whatsapp.com/send?phone=919811808170"><i
+                        class="fa fa-whatsapp"></i></a>
+                <a role="button" class="btn btn-danger" href="mailto:sptools23@gmail.com"><i
+                        class="fa fa-envelope-o"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=919811808170">
+            <img src="src/images/whatsapp-social-media-svgrepo-com.svg" />
+        </a>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <footer class="footer  pt-1">
+        <div class="m-4 m-sm-5 ms-sm-0">
+            <div class="row">
+                <div class="col-12 offset-sm-1 col-sm-3">
+                    <!-- <div class="row">
+                            <img class="col-6 col-sm-6" src="src/images/logo.png">
+                            <h1 class="col-6 col-sm-6 align-self-center">SPtools</h1>
+                        </div> -->
+                    <h1>About Us</h1>
+
+                    <p>"SP Tools is a company that was founded in 1997 in Delhi by late Shri Sudhir Gupta.
+                        We specialize in
+                        manufacturing manual machine tools and CNC tools for the production of bangles and rings."</p>
+
+                </div>
+                <div class="col-12 col-sm-3 ">
+                    <h1>Our Address</h1>
+
+
+                    <address>
+                        Address: Delhi Branch:- B-43, Gali No. 4, South Ganesh Nagar, Patparganj
+                        Road, Delhi- 110092 (India)
+                        <br>
+                        <br>
+                        <a class="text-reset alink" href="tel:+91 9811808170"><i class="fa fa-phone fa-lg"></i>
+                            +91 9811808170</a>
+                        <a class="text-reset  alink" href="tel:+91 9810684500">+91 9810684500</a>
+                        <br>
+                        <a class="text-reset  alink" href="mailto:sptools23@gmail.com">
+                            <i class="fa fa-envelope fa-lg"></i>
+                            sptools23@gmail.com</span></a>
+
+                    </address>
+
+                </div>
+
+                <div class="col-7 col-sm-3 ">
+                    <h1> Our Products</h1>
+                    <ul class="list-unstyled">
+
+                        <li><a class="text-reset alink" onclick="changeID('Posalux')" href="products.html#navi">Posalux
+                                Tools</a></li>
+                        <li><a class="text-reset alink" onclick="changeID('Cnc')" href="products.html#navi">C.N.C
+                                Tools</a></li>
+                        <li><a class="text-reset alink" onclick="changeID('End')" href="products.html#navi">Endmill
+                                Tools</a></li>
+                        <li><a class="text-reset alink" onclick="changeID('Disc')" href="products.html#navi">Disc
+                                Tools</a></li>
+                        <li><a class="text-reset alink" onclick="changeID('Dull')" href="products.html#navi">Dull
+                                Pin</a></li>
+                        <li><a class="text-reset alink" onclick="changeID('Inside')" href="products.html#navi">In-Side
+                                Turning Tools</a></li>
+                        <li><a class="text-reset alink" onclick="changeID('Hammer')" href="products.html#navi">Hammer
+                                Tools</a></li>
+                        <li><a class="text-reset alink" onclick="changeID('Pcd')" href="products.html#navi">P.C.D.
+                                Tools</a></li>
+                        <li><a class="text-reset alink" onclick="changeID('Magic')" href="products.html#navi">Magic
+                                Wheel</a></li>
+                        <li><a class="text-reset alink" href="products.html">View All</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-5 col-sm-2 ">
+                    <div class="">
+                        <h1>Explore</h1>
+                        <ul class="list-unstyled">
+                            <li class="" id=""><a class=" text-reset alink" href="home.html">Home</a></li>
+                            <li class="" id=""><a class="text-reset alink" href="aboutus.html" type="">About Us</a></li>
+                            <li class="" id=""><a class="text-reset  alink" href="products.html">Our
+                                    Products</a></li>
+                            <li class="" id=""><a class="text-reset  alink" href="gallery.html">Our
+                                    Gallery</a></li>
+                            <!-- <li class="" id=""><a class="text-reset text-decoration-none" href="Enquiry.html">Enquiry</a></li> -->
+                            <li class="" id=""><a class="text-reset  alink" href="contact.html">Contact
+                                    Us</a></li>
+                            <br>
+                            <br>
+                            <div calss="float-end " id="google_translate_element"></div>
+
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                                }
+                            </script>
+
+                            <script type="text/javascript"
+                                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                    </div>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row justify-content-center">
+
+            <div class="text-center">
+                <a class="btn btn-social-icon btn-whatsapp" href="https://api.whatsapp.com/send?phone=919811808170"><i
+                    class="fa fa-whatsapp"></i></a>
+            <a class="btn btn-social-icon btn-mail" href="mailto:sptools23@gmail.com"><i
+                    class="fa fa-envelope-o"></i></a>
+            <a class="btn btn-social-icon btn-face" href="https://www.facebook.com/S-P-TOOLS-109777038042606/"><i
+                    class="fa fa-facebook"></i></a>
+
+            <a class="btn btn-social-icon btn-mail" href="https://youtube.com/@vikeshgupta8273"><i
+                    class="fa fa-youtube-play"></i></a>
+            <a class="btn btn-social-icon btn-face" href="https://instagram.com/vikeshgupta?igshid=NTdlMDg3MTY="><i
+                    class="fa fa-instagram"></i></a>
+            </div>
+
+            <div class="col-auto">
+                <p>© Copyright 2022 SPTools All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- build:js js/main.js -->
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+       <script src="node_modules/mdb-ui-kit/js/mdb.min.js"></script>
+       <script src="js/main.js"></script> -->
+    <!-- endbuild -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+
+</body>
+
+</html>
